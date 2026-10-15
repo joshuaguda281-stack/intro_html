@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Edu+QLD+Hand:wght@400..700&family=Great+Vibes&family=Nabla&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #efbf86;
+             font-family: "Great Vibes", cursive;
+        }
+        form{
+            width: 30%auto;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            border: 4px solid #940b0b.07923;
+        }
+        .full-width{
+            width: 100%;
+            padding: auto;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- text, email, password, number, date, radio, checkbox, select, submit  -->
+     <form>
+        <label for="username">Username:</label>
+        <input class="full-width" type="text" required name="username" placeholder="Enter your username">
+        <label for="full_name">Full Name:</label>
+        <input class="full-width" type="text" required name="full_name" placeholder="Enter your full name">
+        <label for="email">Email:</label>
+        <input class="full-width" type="email" name="email" placeholder="Enter your email">
+        <label for="password">Password:</label>
+        <input class="full-width" type="password" name="password" placeholder="Enter your password">
+        <label for="age">Age:</label>
+        <input class="full-width" type="number" min="18" max="80" name="age" placeholder="Enter your age">
+        <label for="birthdate">Birthdate:</label>
+        <input class="full-width" type="date" min="1900-01-01" max="2010-12-31" name="birthdate" placeholder="Enter your birthdate">
+        <br>
+        <label for="gender">Gender:</label>
+        <input class="full-width" type="radio" name="gender" value="male"> Male
+        <input class="full-width" type="radio" name="gender" value="female"> Female
+        <br>
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input class="full-width" type="checkbox" name="subscribe" value="yes"> Yes
+        <br>
+        <label for="country">Country:</label>
+        <select class="full-width" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <optgroup label="Africa">
+                <option value="kenya">Kenya</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="south-africa">South Africa</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="japan">Japan</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+            </optgroup>
+        </select>
+        <button class="full-width" type="submit">Submit</button>
+        <hr>
+        <input class="full-width" type="checkbox" id="opt-in" name="opt-in" value="yes">
+        <label for="opt-in">Opt in for updates</label>
+
+     </form>
+</body>
+</html>
