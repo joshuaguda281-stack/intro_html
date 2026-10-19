@@ -6,11 +6,6 @@
     --warning-color: #ffc107;
     --info-color: #17a2b8;
 }
-
-.body {
-    /* background-color: var(--primary-color); */
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
