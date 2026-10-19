@@ -1,61 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nabla&display=swap" rel="stylesheet">
-    <style>
-        body {
-             background-color: #008000;
-        }
-        div {
-            background-color: hsl(235, 70%, 33%);
-            padding-left: 20px;
-            padding-right: 20px;
-            margin: 15px;
-            border: 1px solid rgb(2, 0, 128);
-        }
-        div {
-        h3 {
-            color: #3251ec;
-            text-decoration: underline;
-            text-align: center;
-           /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-            font-family: "Great Vibes", cursive;
-            font-size: 3rem;
-        }}
-        p {
-            color: #692db3;
-            font-size: 16px;
-            line-height: 1.5;
-            /* font-family: monospace; */
-             font-optical-sizing: auto;
-        }
-        /*google fonts*/
-        /* css framework */
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divs · Intro HTML</title>
+  <meta name="description" content="What a div is for, and how margin, border, and padding stack around content.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div>
-        <h1 style="color: #ec3238;
-        font-optical-sizing: auto;
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="wordmark" href="index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1e4634"/><path fill="#f4f0e8" d="M16 6.5c1.8 3.4 2 5.6 0 9 3.6-.7 6.2.7 7.1 3.5-3.4.9-5.2 2.6-7.1 5.4-1.9-2.8-3.7-4.5-7.1-5.4C10 16.2 12.6 14.8 16 15.5c-2-3.4-1.8-5.6 0-9z"/></svg>
+        Intro <em>HTML</em>
+      </a>
+      <input class="nav-toggle" id="nav-toggle" type="checkbox">
+      <label class="nav-button" for="nav-toggle"><span class="open">Menu</span><span class="close">Close</span></label>
+      <nav class="site-nav" id="site-nav" aria-label="Lessons">
+        <a href="index.html">Home</a>
+        <a href="indechi.html">Headings</a>
+        <a href="Div.html" aria-current="page">Divs</a>
+        <a href="list.html">Lists</a>
+        <a href="links.html">Links</a>
+        <a href="tables.html">Tables</a>
+        <a href="forms.html">Forms</a>
+        <a href="navigation%20bar.html">Nav</a>
+        <a href="images/flex.html">Flex</a>
+        <a href="love.html">Love</a>
+      </nav>
+    </div>
+  </header>
 
-        ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <p style="color: #692db3;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, natus minus quam a provident, repudiandae tempora tenetur eos porro cumque illo dolorum voluptatum neque cum sed sit unde. Sequi, vitae!
-        Natus nulla, quisquam culpa veritatis dignissimos consequuntur adipisci dicta, sapiente ipsum impedit laborum eius quos tempora sunt ex corporis beatae maxime officia esse. Reprehenderit obcaecati quae odio. Praesentium, neque laudantium.
-        Eveniet architecto, consectetur quas aperiam aliquid totam dolore assumenda nisi laborum aspernatur voluptatum dolorem, ratione, accusamus id nesciunt quos tempore odit iure facere inventore quia tenetur quidem? Eaque, harum delectus!
-        Natus, labore quis doloribus optio eaque perspiciatis repellendus laboriosam repudiandae fugiat distinctio numquam obcaecati nemo omnis praesentium dignissimos reprehenderit facilis sapiente alias cupiditate hic laudantium quo? Iusto id optio hic?
-        Libero veritatis neque similique adipisci ipsa! Adipisci fugiat aperiam soluta ab eveniet nesciunt repellat, iste explicabo, quam, reiciendis incidunt minus nam! Numquam, obcaecati quisquam fugit aperiam aliquam doloribus inventore illum.</p>
+  <main id="main" tabindex="-1">
+    <div class="wrap">
+      <header class="page-intro prose">
+        <p class="kicker">Lesson 02 · div</p>
+        <h1>Boxes, used on purpose.</h1>
+        <p class="lede">A div groups things that belong in one box. It has no meaning of its own, which is why it is useful for layout and the wrong choice when a real element exists.</p>
+      </header>
+
+      <section class="prose" aria-labelledby="model">
+        <h2 id="model">The box model</h2>
+        <p>Every element is a box. From the outside in: margin, border, padding, content. The colors below are the four layers of one div.</p>
+        <div class="shell">
+          <span class="tag">margin</span>
+          <div class="frame">
+            <span class="tag">border</span>
+            <div class="pad">
+              <span class="tag">padding</span>
+              <div class="core">content</div>
+            </div>
+          </div>
+        </div>
+        <p>Margin pushes other boxes away. Padding keeps the words off the border. Set them in CSS. The HTML only needs the element.</p>
+      </section>
+
+      <section class="prose" aria-labelledby="choose">
+        <h2 id="choose">Choose the element that already has a name</h2>
+        <p>A block with a heading is a <code>section</code>. A self-contained piece is an <code>article</code>. The bar at the top of this site is a <code>header</code> holding a <code>nav</code>. Reach for a div when you are only making a box, the way the diagram above is only a diagram.</p>
+        <article>
+          <h3>This block is an article</h3>
+          <p>It could be lifted out and still make sense. That is the test. A div would have grouped the same words, and a browser would have drawn them the same way. The article tag is the one that says why they are together.</p>
+        </article>
+        <pre><code>&lt;section&gt;
+  &lt;h2&gt;The box model&lt;/h2&gt;
+  &lt;p&gt;Every element is a box.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+        <p class="next"><a href="list.html">Next · Lists</a></p>
+      </section>
     </div>
-    <div>
-        <h1 style="color: #ec32d6;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis deleniti nisi ipsam quia labore magni recusandae? Quaerat, error! Officia officiis sint, voluptatum laudantium quidem dolor provident minima voluptatem.!</h1>
-        <h2 style="color: #ec32d6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ipsum!</h2>
-        <!-- hexadecimal code ==a-f 0-9 #b11212 -->
-        <h3 style="color: #3251ec; text-decoration: underline;">lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, ipsum!</h3>
-        <h4 style="color: #ec32d6;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni sed temporibus inventore tenetur aspernatur dolorem provident commodi asperiores necessitatibus ex eligendi quia optio, quis fugit nulla exercitationem. Ipsum, aspernatur maxime!</h4>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Intro HTML · 2026</p>
+      <p><a href="success.html">Form receipt</a></p>
     </div>
+  </footer>
 </body>
 </html>

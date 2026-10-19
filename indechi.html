@@ -1,119 +1,102 @@
 <!DOCTYPE html>
-
-<html>
-
- 
-
+<html lang="en">
 <head>
-
-<meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Tables</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headings · Intro HTML</title>
+  <meta name="description" content="How headings and images give an HTML page its structure.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
- 
-
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="wordmark" href="index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1e4634"/><path fill="#f4f0e8" d="M16 6.5c1.8 3.4 2 5.6 0 9 3.6-.7 6.2.7 7.1 3.5-3.4.9-5.2 2.6-7.1 5.4-1.9-2.8-3.7-4.5-7.1-5.4C10 16.2 12.6 14.8 16 15.5c-2-3.4-1.8-5.6 0-9z"/></svg>
+        Intro <em>HTML</em>
+      </a>
+      <input class="nav-toggle" id="nav-toggle" type="checkbox">
+      <label class="nav-button" for="nav-toggle"><span class="open">Menu</span><span class="close">Close</span></label>
+      <nav class="site-nav" id="site-nav" aria-label="Lessons">
+        <a href="index.html">Home</a>
+        <a href="indechi.html" aria-current="page">Headings</a>
+        <a href="Div.html">Divs</a>
+        <a href="list.html">Lists</a>
+        <a href="links.html">Links</a>
+        <a href="tables.html">Tables</a>
+        <a href="forms.html">Forms</a>
+        <a href="navigation%20bar.html">Nav</a>
+        <a href="images/flex.html">Flex</a>
+        <a href="love.html">Love</a>
+      </nav>
+    </div>
+  </header>
 
- 
+  <main id="main" tabindex="-1">
+    <div class="wrap">
+      <header class="page-intro prose">
+        <p class="kicker">Lesson 01 · h1–h6</p>
+        <h1>One title, then the rest.</h1>
+        <p class="lede">A heading says what the next stretch of page is about. The levels nest: h1 for the page, h2 for a section, h3 for a part of that section.</p>
+      </header>
 
-<table>
+      <section class="prose" aria-labelledby="levels">
+        <h2 id="levels">What the levels are for</h2>
+        <p>This page has one <code>h1</code>. The line you just passed is an <code>h2</code>. Skip a level and a screen reader loses the map, the way a book would if chapter 4 arrived with no chapter 3.</p>
+        <h3>A heading is a label, not a size</h3>
+        <p>CSS decides how large it looks. The tag decides where it sits in the outline. Change the look in the stylesheet. Keep the level honest in the HTML.</p>
+      </section>
 
-<thead>
+      <section aria-labelledby="pictures">
+        <div class="prose">
+          <h2 id="pictures">Pictures with a job</h2>
+          <p>An <code>img</code> needs an <code>alt</code> that describes the picture for someone who cannot see it. A <code>figure</code> groups the picture with its <code>figcaption</code>.</p>
+        </div>
+        <div class="figures">
+          <figure>
+            <img src="images/sandisk-udRj4qXyAPs-unsplash.jpg" alt="A colorist smiling at a desk of monitors in a dim grading suite.">
+            <figcaption>Sandisk · Unsplash. Alt text names the person, the place, and the work.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/christoph-nolte-3Xy-p9idRMk-unsplash.jpg" alt="A great grey owl facing the camera, yellow eyes against a dark background.">
+            <figcaption>Christoph Nolte · Unsplash</figcaption>
+          </figure>
+        </div>
+        <div class="prose">
+          <h3>Alt text</h3>
+          <p>Write what is in the picture. “Owl” is thin. “A great grey owl facing the camera” is enough for this page.</p>
+          <h3>Captions</h3>
+          <p>The caption is extra, for everyone. It can hold the credit. The alt still has to stand alone, because some people never see the caption.</p>
+        </div>
+      </section>
 
-<tr>
+      <section class="prose" aria-labelledby="deeper">
+        <h2 id="deeper">The lower levels</h2>
+        <p>Most pages never need to go past h3. When a section really does get deep, the next tags are waiting.</p>
+        <h4>h4 marks a point inside an h3</h4>
+        <p>Use it when the h3 has parts of its own.</p>
+        <h5>h5 is rarer</h5>
+        <p>If you reach h5 often, the page may be trying to be an outline of the whole subject. Split it.</p>
+        <h6>h6 is the last level</h6>
+        <p>There is no h7. This one is styled small and in capitals so the end of the scale is visible.</p>
+        <pre><code>&lt;figure&gt;
+  &lt;img src="images/owl.jpg" alt="A great grey owl facing the camera."&gt;
+  &lt;figcaption&gt;Christoph Nolte · Unsplash&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+        <p class="next"><a href="Div.html">Next · Divs</a></p>
+      </section>
+    </div>
+  </main>
 
-<th>First Name</th>
-
-<th>Last Name</th>
-
-<th>Email</th>
-
-<th>DOB</th>
-
-<th>Gender</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>Jane</td>
-
-<td>Doe</td>
-
-<td>jane@yahoo.com</td>
-
-<td>19-10-2008</td>
-
-<td>F</td>
-
-</tr> 
-
- 
-
-<tr>
-
-<td>Jack</td>
-
-<td>Jill</td>
-
-<td>jack@yahoo.com</td>
-
-<td>19-12-2018</td>
-
-<td>M</td>
-
-</tr> 
-
- 
-
-<tr>
-
-<td>John</td>
-
-<td>Doe</td>
-
-<td>john@yahoo.com</td>
-
-<td>19-05-2005</td>
-
-<td>M</td>
-
-</tr>
-
- 
-
-<tr>
-
-<td>Jane</td>
-
-<td>Doe</td>
-
-<td>jane@yahoo.com</td>
-
-<td>19-10-2008</td>
-
-<td>F</td>
-
-</tr>
-
- 
-
-</tbody>
-
-</table>
-
- 
-
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Intro HTML · 2026</p>
+      <p><a href="success.html">Form receipt</a></p>
+    </div>
+  </footer>
 </body>
-
- 
-
 </html>
