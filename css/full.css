@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&display=swap');
+
+/*  font-family: "Playwrite AR Guides", cursive; */
+:root {
+    --brand-green: #008000;
+    --brand-dark: #012f21;
+    --soft-bg: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--brand-dark);
+}
+
+.navbar-brand {
+    color: var(--brand-green);
+    font-size: 1.4rem;
+    ;
+}
+
+#Goods {
+    color: var(--brand-dark);
+}
+
+.navbar-brand:hover {
+    color: #008000
+}
+
+.nav-link {
+    color: #4f4f4f !important;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.nav-link:hover {
+    color: var(--brand-green) !important;
+}
+
+.btn-success {
+    background-color: var(--brand-green) !important;
+    border-color: var(--brand-green);
+    border-radius: 3px;
+    padding: 12px;
+    transition: all 1s ease;
+}
+
+.btn-success:hover {
+    background-color: #012f21 !important;
+    border-color: #012f21;
+}
+
+.hero {
+    background: linear-gradient(to right, grey, #012f21, white), url("images/michael-weihmann-y-y1c8X4yD0-unsplash.jpg") no-repeat center center/cover;
+    min-height: 80vh;
+    color: white;
+}
+
+.display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero .small-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-size: .9rem;
+    opacity: .8;
+}
+
+#hero h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    color: #ffffff;
+    opacity: .8;
+}
+
+.product-card {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border-color: white;
+    border-width: 50%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+    -webkit-box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(-5px);
+    -webkit-transition: transform 0.2s ease, box-shadow 0.2s ease;
+    -moz-box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    -moz-transform: translateY(-5px);
+    -moz-transition: transform 0.2s ease, box-shadow 0.2s ease;
+    -ms-box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    -ms-transform: translateY(-5px);
+    -ms-transition: transform 0.2s ease, box-shadow 0.2s ease;
+    -o-box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    -o-transform: translateY(-5px);
+    -o-transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-body h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #012f21;
+    margin-bottom: 1rem;
+}
+
+.card .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--brand-green);
+    margin-bottom: .5rem;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.category-section h2 {
+    color: #012f21;
+    font-weight: bold;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.category-btn {
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background-color: var(--brand-green);
+    color: white;
+    border-color: var(--brand-green);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #012f21;
+    margin-bottom: 1rem;
+}
+
+.about-section {
+    background-color: #f9f9f9;
+}
+
+.about-section h2 {
+    color: #012f21;
+    font-weight: bold;
+}
+
+.about-section p {
+    color: #6c757d;
+}
+
+.about-btn {
+    background-color: var(--brand-green);
+    border-color: var(--brand-green);
+    border-radius: 3px;
+    padding: 12px;
+    transition: all 1s ease;
+}
+
+.about-btn:hover {
+    background-color: #012f21;
+    border-color: #012f21;
+}
+
+.about-section i {
+    font-size: 2rem;
+    color: var(--brand-green);
+}
+
+footer {
+    background-color: var(--brand-dark);
+    color: white;
+}
+
+footer h4 {
+    color: var(--brand-green);
+    font-weight: bold;
+}
+
+footer p {
+    color: #6c757d;
+}
+
+footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--brand-green);
+}
+
+footer i {
+    color: var(--brand-green);
+}
+
+footer i:hover {
+    color: var(--brand-dark);
+}
+
+footer hr {
+    border-color: var(--brand-green);
+}
+
+footer .text-center {
+    color: #6c757d;
+}
+
+.copyright {
+    background-color: var(--brand-dark);
+    color: #6c757d;
+    font-weight: bold;
+}
